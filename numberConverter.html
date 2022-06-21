@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chuyển Đổi Cơ Số</title>
+
+   <link rel="stylesheet" href="numberConverter.css">
+   <script src="numberConverter.js" defer></script>
+</head>
+
+<body>
+   <main>
+      <h1>CHUYỂN ĐỔI CÁC HỆ CƠ SỐ</h1>
+
+      <div id="select-container">
+         <select id="from-select">
+            <option selected value="from-decimal">Decimal</option>
+            <option value="from-binary">Binary</option>
+            <option value="from-hexadecimal">Hexadecimal</option>
+         </select>
+         <span>to</span>
+         <select id="to-select">
+            <option  value="to-decimal">Decimal</option>
+            <option selected value="to-binary">Binary</option>
+            <option value="to-hexadecimal">Hexadecimal</option>
+         </select>
+      </div>
+      
+      <div id="input-container">
+         <span id="input-value">Enter Decimal number</span>
+         <input type="text" id="from-input" placeholder="">
+         <span id="error"></span>
+      </div>
+      <div id="select-container">
+      <button id="convert-button">Convert</button>
+      <button id="reset-button">Reset</button>
+      <button id="swap-button">Swap</button>
+      </div>
+      <div id="input-container">
+      <span id="convert-value1">Binary number</span>
+      <input type="text" id="to-input1" placeholder="" readonly>
+      <span id="convert-value2">Hexadecimal number</span>
+      <input type="text" id="to-input2" placeholder="" readonly>
+      </div>
+   </main>
+
+
+</body>
+
+</html>
